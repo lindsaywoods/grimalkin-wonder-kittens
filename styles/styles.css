@@ -127,10 +127,10 @@ header {
     font-family: 'Diplomata SC', cursive;
     font-size: 30px; }
   header .and {
-    font-size: 16px; }
+    font-size: 15px; }
   header h2 {
     font-family: 'Sail', cursive;
-    font-size: 40px;
+    font-size: 25px;
     letter-spacing: 3px;
     padding-top: 20px; }
   header .headercontent {
@@ -148,7 +148,7 @@ header {
   padding-top: 120px; }
 
 .mg {
-  font-size: 70px; }
+  font-size: 50px; }
 
 .madgrim {
   font-size: 50px;
@@ -162,44 +162,9 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 30px 10px 10px;
-  font-family: 'IM Fell DW Pica', serif;
+  font-family: "IM Fell DW Pica", serif;
   letter-spacing: 1.5px;
-  word-spacing: 3px;
-  display: inline-block;
-  -webkit-box-shadow: 0 0 0 rgba(182, 40, 118, 0.4);
-  box-shadow: 0 0 0 rgba(182, 40, 118, 0.4);
-  -webkit-animation: pulse 5s infinite;
-  animation: pulse 5s infinite; }
-  .wouldyou button {
-    border-radius: 15px;
-    padding: 0px 15px;
-    font-size: 20px;
-    -webkit-box-shadow: 10 10 10 rgba(151, 24, 119, 0.4);
-    box-shadow: 10 10 10 rgba(151, 24, 119, 0.4);
-    -webkit-animation: pulse 5s infinite;
-    animation: pulse 5s infinite; }
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0;
-    box-shadow: 0 0 0 0; }
-  70% {
-    -webkit-box-shadow: rgba(196, 178, 188, 0.9);
-    box-shadow: rgba(196, 178, 188, 0.9); }
-  100% {
-    -webkit-box-shadow: 0 0 0 0;
-    box-shadow: 0 0 0 0; } }
-
-@keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0;
-    box-shadow: 0 0 0 0; }
-  70% {
-    -webkit-box-shadow: rgba(196, 178, 188, 0.9);
-    box-shadow: rgba(196, 178, 188, 0.9); }
-  100% {
-    -webkit-box-shadow: 0 0 0 0;
-    box-shadow: 0 0 0 0; } }
+  word-spacing: 3px; }
 
 .questionflex {
   display: -webkit-box;
@@ -300,9 +265,15 @@ h1, h2 {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none; }
+
 .wrapper {
   max-width: 1100px;
   margin: 0 auto; }
 
 body {
   background-color: #2c2d38; }
+
+.askagain {
+  background: mediumvioletred; }

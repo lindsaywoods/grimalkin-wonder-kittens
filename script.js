@@ -67,17 +67,11 @@ $(function(){
         //removing default browser behavior ex refresh
         e.preventDefault();
 
-        // hides form when it gets submitted
-        // const hideform = $("#myForm").hide();
-        // console.log("hide?");
-
         // 'question' is equal to whatever gets typed into the input
         let question = $("textarea").val();
 
         // clears the input field
         $("textarea").val("");
-
-        
 
         //generates random prediction using reusable function (getRandom...)
         const randomIndex = getRandomIndex(predictions);
@@ -85,26 +79,47 @@ $(function(){
         //get prediction text from array 'predictions'
         const getPrediction = predictions[randomIndex];
 
+    
         // get prediction style class from array 'predictionStyles'
         const predictionStyle = predictionStyles[randomIndex];
         console.log(randomIndex);
         console.log(question);
 
-        if (question !== ""){
-        // puts the prediction on the page
-        
-        // const askagain = $("#myForm").show();
-        // console.log("maybe?");
+        // gives the user an option to ask again
 
+        // const askagain = function(){
+        //     $("#myForm").show();
+        //     console.log("hello?");
+        // };
+
+        function askagain (){
+            $("#myForm").show();
+            console.log("what is goingon");
+
+        }
+
+        
+             
+
+
+        if (question !== ""){
+        // hides the form once it gets submitted
+        const hideform = $("#myForm").hide();
+
+        // puts prediction on the page alongside the question
         $(".results").html(`
         <p class = "question">${question}</p>
         <p class = "prediction ${predictionStyle}"> ${getPrediction}</p>
-        // <p class="askagain ${askagain}"></p>
-        
+        <button class="askagain ${askagain}" id="askagain"></p>
         `);
     }
 
-        
+    $("#askagain").on("click", function(e){
+        e.preventDefault();
+        $("#myForm").show();
+        $(".results").hide();
+        console.log("do not have high hopes for this");
+    });
 
         
         
