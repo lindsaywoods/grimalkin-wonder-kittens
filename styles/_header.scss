@@ -1,0 +1,52 @@
+
+
+header {
+    margin: 0 auto;
+    position: relative;
+    color: $mainColour;
+    
+    h1 {
+        font-family: 'Diplomata SC', cursive;
+        font-size: 30px;
+        
+    }
+    .and {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-family: 'Sail', cursive;
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding-top: 20px;
+    }
+    .headercontent {
+        text-align: center;
+        
+    }
+}
+
+.headerimage {
+    stroke: $mainColour;
+    fill: $mainColour;
+    position: relative;
+    svg {
+        position: absolute;
+        z-index: -3
+    }
+}
+
+.headercontent h1 {
+    padding-top: 120px;
+    // color:mediumvioletred;
+}
+
+.mg {
+    font-size: 70px;
+}
+
+.madgrim {
+    font-size: 50px;
+    font-family: 'Sail', cursive;
+}
+

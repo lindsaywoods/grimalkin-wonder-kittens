@@ -1,25 +1,28 @@
 possible fonts (heading)
-- lobster 2
-- playball
-- special elite
 - lily script one
-- spirax
 - sail
 - diplomata sc
+
+- playball
+- spirax
+- lobster 2
 
 
 possible fonts (copy)
 - pompiere
-- seaweed script
-- vampiro one
-- dynalight
+- special elite
 - tulpen one
 - flamenco
-- miniver
-- sarina
 - averia gruesa libre 
 - oldenburg
+
+cats 
 - barrio
+- sarina
+- miniver   
+- dynalight
+- seaweed script    
+- vampiro one
 
 possible fonts (i don't know)
 - megrim
@@ -27,3 +30,5 @@ possible fonts (i don't know)
 
 QUESTIONS
 - so many fonts?
+ - page load vs in use vs size of site
+

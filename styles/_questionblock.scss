@@ -1,0 +1,73 @@
+.results {
+    // border: 3px solid $mainColour;
+}
+
+.questionflex {
+    display: flex;
+     justify-content: center;
+}
+.questionblock {
+    font-family: $copyFont;
+    color: $mainColour;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-top: 100px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.buttonflex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+textarea {
+    margin: 10px;
+    background:  url("images/kittens/clementine2.svg");
+    background-repeat: no-repeat;
+    color: $mainColour;
+    border-radius: 5px;
+    padding: 20px 15px;
+    border: 1px solid $mainColour;
+    margin-bottom: 35px;
+}
+
+.askbutton {
+    // width: 200px;
+    // height: 100px;
+    padding: 0px 35px;
+    margin: 0 auto;
+    line-height: 1;
+    font-size: 35px;
+    border-radius: 5px;
+    // background-color: aqua;
+    // border: $mainColour solid 5px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.question {
+    // border: 3px solid $mainColour;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.prediction {
+    // border: 3px solid $mainColour;
+    padding: 100px;
+    border-radius: 5px;
+    margin: 30px 10px;
+}
+
+.prediction-7 {
+    background-image: url("images/kittens/olivia.svg");
+    background-repeat: no-repeat;
+    background-color: rgba(44, 45, 56, .1);
+}

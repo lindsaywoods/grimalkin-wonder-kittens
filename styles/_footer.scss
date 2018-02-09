@@ -1,0 +1,33 @@
+footer {
+    p {
+        font-family: $copyFont;
+        color: $mainColour;
+    }
+}
+
+.line {
+    height: 2px;
+    background-color: $mainColour;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 30px;;
+}
+
+.footerflex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerleftside {
+    display: flex;
+}
+
+.footersvg {
+    max-width: 200px;
+    margin: 10px 30px;
+    svg {
+        stroke: $mainColour;
+        fill: $mainColour;
+    }
+}

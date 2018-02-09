@@ -1,0 +1,308 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+header {
+  margin: 0 auto;
+  position: relative;
+  color: #d8ddef; }
+  header h1 {
+    font-family: 'Diplomata SC', cursive;
+    font-size: 30px; }
+  header .and {
+    font-size: 16px; }
+  header h2 {
+    font-family: 'Sail', cursive;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-top: 20px; }
+  header .headercontent {
+    text-align: center; }
+
+.headerimage {
+  stroke: #d8ddef;
+  fill: #d8ddef;
+  position: relative; }
+  .headerimage svg {
+    position: absolute;
+    z-index: -3; }
+
+.headercontent h1 {
+  padding-top: 120px; }
+
+.mg {
+  font-size: 70px; }
+
+.madgrim {
+  font-size: 50px;
+  font-family: 'Sail', cursive; }
+
+.wouldyou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 30px 10px 10px;
+  font-family: 'IM Fell DW Pica', serif;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  display: inline-block;
+  -webkit-box-shadow: 0 0 0 rgba(182, 40, 118, 0.4);
+  box-shadow: 0 0 0 rgba(182, 40, 118, 0.4);
+  -webkit-animation: pulse 5s infinite;
+  animation: pulse 5s infinite; }
+  .wouldyou button {
+    border-radius: 15px;
+    padding: 0px 15px;
+    font-size: 20px;
+    -webkit-box-shadow: 10 10 10 rgba(151, 24, 119, 0.4);
+    box-shadow: 10 10 10 rgba(151, 24, 119, 0.4);
+    -webkit-animation: pulse 5s infinite;
+    animation: pulse 5s infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0; }
+  70% {
+    -webkit-box-shadow: rgba(196, 178, 188, 0.9);
+    box-shadow: rgba(196, 178, 188, 0.9); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0; } }
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0; }
+  70% {
+    -webkit-box-shadow: rgba(196, 178, 188, 0.9);
+    box-shadow: rgba(196, 178, 188, 0.9); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0; } }
+
+.questionflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.questionblock {
+  font-family: "IM Fell DW Pica", serif;
+  color: #d8ddef;
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin-top: 100px;
+  max-width: 800px;
+  text-align: center; }
+
+.buttonflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+textarea {
+  margin: 10px;
+  background: url("images/kittens/clementine2.svg");
+  background-repeat: no-repeat;
+  color: #d8ddef;
+  border-radius: 5px;
+  padding: 20px 15px;
+  border: 1px solid #d8ddef;
+  margin-bottom: 35px; }
+
+.askbutton {
+  padding: 0px 35px;
+  margin: 0 auto;
+  line-height: 1;
+  font-size: 35px;
+  border-radius: 5px; }
+  .askbutton p {
+    margin: 0;
+    padding: 0; }
+
+.question {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px; }
+
+.prediction {
+  padding: 100px;
+  border-radius: 5px;
+  margin: 30px 10px; }
+
+.prediction-7 {
+  background-image: url("images/kittens/olivia.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(44, 45, 56, 0.1); }
+
+footer p {
+  font-family: "IM Fell DW Pica", serif;
+  color: #d8ddef; }
+
+.line {
+  height: 2px;
+  background-color: #d8ddef;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 30px; }
+
+.footerflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.footerleftside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footersvg {
+  max-width: 200px;
+  margin: 10px 30px; }
+  .footersvg svg {
+    stroke: #d8ddef;
+    fill: #d8ddef; }
+
+h1, h2 {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+body {
+  background-color: #2c2d38; }
