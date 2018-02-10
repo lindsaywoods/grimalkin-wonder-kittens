@@ -1,11 +1,25 @@
 .results {
     // border: 3px solid $mainColour;
+    background: lighten($backgroundColour, 40);
+    border-radius: 5px;
+    border: 1px solid $mainColour;
+    border-style: double;
+    border-width: 8px;
+    padding: 10px;
+    color: $backgroundColour;
 }
+
 
 .questionflex {
     display: flex;
      justify-content: center;
+     margin: 0 auto;
 }
+
+.questionBlockContainer {
+    display: flex;
+}
+
 .questionblock {
     font-family: $copyFont;
     color: $mainColour;
@@ -53,21 +67,82 @@ textarea {
 }
 
 .question {
-    // border: 3px solid $mainColour;
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 14px;
+    color: $mainColour;
 }
 
 .prediction {
-    // border: 3px solid $mainColour;
-    padding: 100px;
-    border-radius: 5px;
-    margin: 30px 10px;
+    margin: 30px 10px 0;
+    text-align: right;
+    font-size: 20px;
+    max-width: 300px;
 }
 
-.prediction-7 {
-    background-image: url("images/kittens/olivia.svg");
-    background-repeat: no-repeat;
-    background-color: rgba(44, 45, 56, .1);
+.prediction-1, .prediction-2 {
+    background-image: url("images/kittens/clementine.svg");
+        &:before {
+            content:"soothsayer clementine says";
+        } 
+        
+}
+
+
+
+.prediction-3, .prediction-4 {
+    background-image: url("images/kittens/clementine2.svg")
+}
+
+.prediction-5, .prediction-6{
+    background-image: url("images/kittens/hortense.svg")
+}
+
+.prediction-7, .prediction-8 {
+    // background-image: url("images/kittens/olivia.svg");
+    font-family: 'Seaweed Script', cursive;
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.prediction-7::before, .prediction-8::before {
+    content: "soothsayer olivia says:";
+    font-family: $copyFont;
+    font-size: 16px;
+}
+
+.prediction-7::after, .prediction-8::after {
+    content: url("images/kittens/olivia.svg");
+    // margin-top: 150px;
+}
+
+.prediction-9, .prediction-10 {
+    background-image: url("images/kittens/hortense2.svg");
+}
+
+.prediction-11 {
+    background-image: url("images/kittens/olivia2.svg");
+}
+
+.prediction-13 {
+    background-image: url("images/kittens/mabel.svg");
+}
+
+.prediction-14 {
+    background-image: url("images/kittens/sophronia.svg");
+    font-family: 'Miniver', cursive;
+}
+
+.prediction-14::before {
+    content:"soothsayer sophronia says:";
+    display: inline-block;
+    font-family: $copyFont;
+}
+
+.prediction-12 {
+    background-image: url("images/kittens/sophronia2.svg");
+}
+
+.askagain {
+    background: mediumvioletred;
 }

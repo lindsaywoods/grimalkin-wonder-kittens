@@ -63,6 +63,22 @@ function getRandomIndex(array){
 }
 
 $(function(){
+
+    
+    // on click, reveals whole form
+    $("#clickhidden").click(function (e) {
+        e.preventDefault();
+        $("#hiddenarea").toggle();
+        // $("#myForm").show();
+    });
+    
+    $("#clickhidden").click(function(e){
+        e.preventDefault();
+        $(".wouldyou").addClass("hidden");
+        console.log("why not hidden?");
+    });
+
+
     $("form").on("submit", function(e){
         //removing default browser behavior ex refresh
         e.preventDefault();
@@ -86,17 +102,11 @@ $(function(){
         console.log(question);
 
         // gives the user an option to ask again
-
-        // const askagain = function(){
-        //     $("#myForm").show();
-        //     console.log("hello?");
-        // };
-
         function askagain (){
             $("#myForm").show();
             console.log("what is goingon");
 
-        }
+        };
 
         
              
@@ -114,15 +124,23 @@ $(function(){
         `);
     }
 
+    // on click, resets form 
     $("#askagain").on("click", function(e){
         e.preventDefault();
         $("#myForm").show();
-        $(".results").hide();
         console.log("do not have high hopes for this");
     });
 
-        
+    // theoretically hides results
+    // $("#askagain").on("click", function (e){
+    //     e.preventDefault(e);
+    //     $(".results").hide();
+    //     console.log("separfunction");
+
+    // });
         
     });
 
+    
+    
 });

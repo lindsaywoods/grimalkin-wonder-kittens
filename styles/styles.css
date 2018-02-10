@@ -147,11 +147,8 @@ header {
 .headercontent h1 {
   padding-top: 120px; }
 
-.mg {
-  font-size: 50px; }
-
 .madgrim {
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Sail', cursive; }
 
 .wouldyou {
@@ -165,6 +162,17 @@ header {
   font-family: "IM Fell DW Pica", serif;
   letter-spacing: 1.5px;
   word-spacing: 3px; }
+  .wouldyou a {
+    color: #d8ddef; }
+
+.results {
+  background: #8c8ea4;
+  border-radius: 5px;
+  border: 1px solid #d8ddef;
+  border-style: double;
+  border-width: 8px;
+  padding: 10px;
+  color: #2c2d38; }
 
 .questionflex {
   display: -webkit-box;
@@ -172,7 +180,13 @@ header {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 auto; }
+
+.questionBlockContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .questionblock {
   font-family: "IM Fell DW Pica", serif;
@@ -218,17 +232,62 @@ textarea {
 .question {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 5px; }
+  font-size: 14px;
+  color: #d8ddef; }
 
 .prediction {
-  padding: 100px;
-  border-radius: 5px;
-  margin: 30px 10px; }
+  margin: 30px 10px 0;
+  text-align: right;
+  font-size: 20px;
+  max-width: 300px; }
 
-.prediction-7 {
-  background-image: url("images/kittens/olivia.svg");
-  background-repeat: no-repeat;
-  background-color: rgba(44, 45, 56, 0.1); }
+.prediction-1, .prediction-2 {
+  background-image: url("images/kittens/clementine.svg"); }
+  .prediction-1:before, .prediction-2:before {
+    content: "soothsayer clementine says"; }
+
+.prediction-3, .prediction-4 {
+  background-image: url("images/kittens/clementine2.svg"); }
+
+.prediction-5, .prediction-6 {
+  background-image: url("images/kittens/hortense.svg"); }
+
+.prediction-7, .prediction-8 {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 28px;
+  padding-bottom: 30px; }
+
+.prediction-7::before, .prediction-8::before {
+  content: "soothsayer olivia says:";
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 16px; }
+
+.prediction-7::after, .prediction-8::after {
+  content: url("images/kittens/olivia.svg"); }
+
+.prediction-9, .prediction-10 {
+  background-image: url("images/kittens/hortense2.svg"); }
+
+.prediction-11 {
+  background-image: url("images/kittens/olivia2.svg"); }
+
+.prediction-13 {
+  background-image: url("images/kittens/mabel.svg"); }
+
+.prediction-14 {
+  background-image: url("images/kittens/sophronia.svg");
+  font-family: 'Miniver', cursive; }
+
+.prediction-14::before {
+  content: "soothsayer sophronia says:";
+  display: inline-block;
+  font-family: "IM Fell DW Pica", serif; }
+
+.prediction-12 {
+  background-image: url("images/kittens/sophronia2.svg"); }
+
+.askagain {
+  background: mediumvioletred; }
 
 footer p {
   font-family: "IM Fell DW Pica", serif;
@@ -275,5 +334,12 @@ a {
 body {
   background-color: #2c2d38; }
 
-.askagain {
-  background: mediumvioletred; }
+#hiddenarea {
+  display: none;
+  margin: 0 auto;
+  text-align: center; }
+
+.hidden {
+  display: none;
+  text-align: center;
+  margin: 0 auto; }

@@ -22,17 +22,24 @@ a {
 }    
 
 body {
-    // background-color: #2a2d43;
-    // background-color: #272326;
-    background-color: #2c2d38;
+    background-color: $backgroundColour;
 }
 
-// rgba(44, 45, 56, 1) (#2c2d38)
 
-.askagain {
-    background: mediumvioletred;
+
+
+
+#hiddenarea {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
 }
 
+.hidden {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
 
 
 
