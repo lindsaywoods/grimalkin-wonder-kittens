@@ -8,11 +8,21 @@ footer {
 .line {
     height: 2px;
     background-color: $mainColour;
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
     margin-top: 100px;
-    margin-bottom: 30px;;
+    margin-bottom: 10px;
 }
+
+.line2 {
+    height: 2px;
+    background-color: $mainColour;
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 3px;
+}
+
+
 
 .footerflex {
     display: flex;

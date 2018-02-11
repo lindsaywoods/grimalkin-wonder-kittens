@@ -1,20 +1,20 @@
 .results {
-    // border: 3px solid $mainColour;
     background: lighten($backgroundColour, 40);
     border-radius: 5px;
-    border: 1px solid $mainColour;
-    border-style: double;
+    // border: 1px solid $mainColour;
+    // border-style: double;
     border-width: 8px;
-    padding: 10px;
-    color: $backgroundColour;
+    position: relative;
+    // padding: 10px;
+    // color: $backgroundColour;
+    margin-top: 30px; 
 }
-
 
 .questionflex {
     display: flex;
-     justify-content: center;
-     margin: 0 auto;
-}
+    justify-content: center;
+    margin: 0 auto;
+    }
 
 .questionBlockContainer {
     display: flex;
@@ -26,9 +26,14 @@
     font-size: 20px;
     letter-spacing: 1px;
     word-spacing: 3px;
-    margin-top: 100px;
     max-width: 800px;
     text-align: center;
+    position: relative;
+    top: 0;
+}
+
+.yesorno {
+    margin-top: 70px;
 }
 
 .buttonflex {
@@ -48,22 +53,40 @@ textarea {
     margin-bottom: 35px;
 }
 
+// submit button
 .askbutton {
-    // width: 200px;
-    // height: 100px;
-    padding: 0px 35px;
     margin: 0 auto;
     line-height: 1;
-    font-size: 35px;
-    border-radius: 5px;
-    // background-color: aqua;
-    // border: $mainColour solid 5px;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 5px 20px;
+    background: $backgroundColour;
+        &::hover{
+            background: white;
+        }
+}
 
-    p {
-        margin: 0;
-        padding: 0;
+
+// reset button
+button.askagain {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+    bottom: 10px;
+    background: lighten($backgroundColour, 40);
+    font-size: 14px;
+    border: 1px solid $mainColour;    
+    &::hover {
+        background-color: black;
     }
+}
 
+p.askagain::hover {
+    background: cyan;
+    border: 1px solid black; 
+    color: cyan;
 }
 
 .question {
@@ -73,36 +96,73 @@ textarea {
     color: $mainColour;
 }
 
+.question::before {
+    content: "query : "
+}
+
 .prediction {
-    margin: 30px 10px 0;
+    margin: 30px 10px;
     text-align: right;
     font-size: 20px;
     max-width: 300px;
 }
 
 .prediction-1, .prediction-2 {
-    background-image: url("images/kittens/clementine.svg");
+    font-family: 'Barrio', cursive;
+    font-size: 30px;    
         &:before {
-            content:"soothsayer clementine says";
+            font-family: $copyFont;
+            content:"soothsayer clementine says : ";
+            font-size: 14px;
         } 
+        &:after {
+            content: url("images/kittens/clementine2.svg");
+        }
         
-}
+    }
+    
 
-
-
+// PREDICTION 3 & PREDICTION 4
 .prediction-3, .prediction-4 {
-    background-image: url("images/kittens/clementine2.svg")
+    font-family: 'Chelsea Market', cursive;
+    font-size: 16px;
 }
+
+.prediction-3::after, .prediction-4::after {
+    content: url("images/kittens/clementine2.svg");
+}
+.prediction-3::before, .prediction-4::before {
+    content: "soothsayer clementine says: ";
+    font-family: $copyFont;    
+}
+
+// PREDICTION 5 & PREDICTION 6 - HORTENSE
 
 .prediction-5, .prediction-6{
-    background-image: url("images/kittens/hortense.svg")
+    font-family: 'Dynalight', cursive;
+    font-size: 35px;
+}
+.prediction-5::after, .prediction-6::after {
+    content: url("images/kittens/hortense.svg");
+}
+.prediction-5::before, .prediction-6::before {
+    content: "soothsayer hortense says: ";
+    font-family: $copyFont;    
+    font-size: 14px;
 }
 
+// PREDICTION 7 & PREDICTION 8
+
 .prediction-7, .prediction-8 {
-    // background-image: url("images/kittens/olivia.svg");
     font-family: 'Seaweed Script', cursive;
     font-size: 28px;
     padding-bottom: 30px;
+        // &::before {
+            // content: "soothsayer olivia says : "
+        // }
+        // &::after {
+            // content: url("images/kittens/olivia.svg");
+        // }
 }
 
 .prediction-7::before, .prediction-8::before {
@@ -115,33 +175,124 @@ textarea {
     content: url("images/kittens/olivia.svg");
 }
 
+// PREDICTION 9 & PREDICTION 10 - HORTENSE
 .prediction-9, .prediction-10 {
-    background-image: url("images/kittens/hortense2.svg");
+    font-family: 'Dynalight', cursive;
+    font-size: 45px;
+    &::before {
+        content: "soothsayer hortense says : ";
+        font-family: $copyFont;
+        font-size: 14px;
+    }
+    &::after {
+        content: url("images/kittens/hortense2.svg")
+    }
+    
 }
 
+.prediction-9 {
+    font-size: 30px;
+}
+
+
+//PREDICTION 11 - OLIVIA
 .prediction-11 {
-    background-image: url("images/kittens/olivia2.svg");
+    font-family: 'Seaweed Script', cursive;
+    font-size: 30px;
+    line-height: 40px;
+    &::before {
+        font-family: $copyFont;
+        content: "soothsayer olivia says : ";
+        font-size: 14px;
+    }    
+    &::after {
+        content: url("images/kittens/olivia2.svg");
+    }
 }
 
-.prediction-13 {
-    background-image: url("images/kittens/mabel.svg");
-}
-
-.prediction-14 {
-    background-image: url("images/kittens/sophronia.svg");
-    font-family: 'Miniver', cursive;
-}
-
-.prediction-14::before {
-    content:"soothsayer sophronia says:";
-    display: inline-block;
-    font-family: $copyFont;
-}
-
+//  PREDICTION 12 - SOPHRONIA
 .prediction-12 {
-    background-image: url("images/kittens/sophronia2.svg");
+    font-family: 'Miniver', cursive;
+    font-size: 24px;
+    &::before{
+        content: "soothsayer sophronia says : ";
+        font-family: $copyFont;
+        font-size: 14px;
+    }
+    &::after {
+        content: url("images/kittens/sophronia2.svg");
+    }    
 }
 
-.askagain {
-    background: mediumvioletred;
+//  PREDICTION 13 - MABEL
+.prediction-13 {
+    font-family: 'Sail', cursive;
+    font-size: 35px;
+    &::before {
+        content: "soothsayer mabel says : ";
+        font-size: 14px;
+        font-family: $copyFont;
+    }
+    &::after {
+    content: url("images/kittens/mabel.svg");
+    }
 }
+
+// PREDICTION 14 - SOPHRONIA
+.prediction-14 {
+    font-family: 'Miniver', cursive;
+    font-size: 30px;
+    &::before {
+        content: "soothsayer sophronia says : ";
+        font-family: $copyFont;
+        font-size: 14px;
+    }
+    &::after {
+        content: url("images/kittens/sophronia.svg");
+    }
+}
+
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-2-10 22:3:28
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+

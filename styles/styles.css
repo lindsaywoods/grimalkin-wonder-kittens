@@ -125,31 +125,37 @@ header {
   color: #d8ddef; }
   header h1 {
     font-family: 'Diplomata SC', cursive;
-    font-size: 30px; }
+    font-weight: normal;
+    font-size: 25px;
+    word-spacing: 9px; }
   header .and {
     font-size: 15px; }
   header h2 {
     font-family: 'Sail', cursive;
     font-size: 25px;
     letter-spacing: 3px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    font-weight: normal; }
   header .headercontent {
     text-align: center; }
 
 .headerimage {
   stroke: #d8ddef;
-  fill: #d8ddef;
-  position: relative; }
-  .headerimage svg {
-    position: absolute;
-    z-index: -3; }
+  fill: #d8ddef; }
 
 .headercontent h1 {
-  padding-top: 120px; }
+  padding-top: 50px; }
 
 .madgrim {
   font-size: 40px;
   font-family: 'Sail', cursive; }
+
+.kittenheader {
+  font-size: 35px;
+  font-family: 'Diplomata SC', cursive; }
+
+.smallheader {
+  border: 3px solid mediumvioletred; }
 
 .wouldyou {
   display: -webkit-box;
@@ -158,21 +164,34 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 30px 10px 10px;
   font-family: "IM Fell DW Pica", serif;
   letter-spacing: 1.5px;
   word-spacing: 3px; }
+  .wouldyou h3 {
+    width: 400px;
+    border: 1px solid #d8ddef;
+    background: #6f728e;
+    font-weight: normal;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin-top: 110px; }
   .wouldyou a {
-    color: #d8ddef; }
+    color: #d8ddef;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center; }
+
+.wouldyou::hover {
+  background: #2c2d38;
+  border: 3px solid mediumvioletred; }
 
 .results {
   background: #8c8ea4;
   border-radius: 5px;
-  border: 1px solid #d8ddef;
-  border-style: double;
   border-width: 8px;
-  padding: 10px;
-  color: #2c2d38; }
+  position: relative;
+  margin-top: 30px; }
 
 .questionflex {
   display: -webkit-box;
@@ -194,9 +213,13 @@ header {
   font-size: 20px;
   letter-spacing: 1px;
   word-spacing: 3px;
-  margin-top: 100px;
   max-width: 800px;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  top: 0; }
+
+.yesorno {
+  margin-top: 70px; }
 
 .buttonflex {
   display: -webkit-box;
@@ -220,14 +243,36 @@ textarea {
   margin-bottom: 35px; }
 
 .askbutton {
-  padding: 0px 35px;
   margin: 0 auto;
   line-height: 1;
-  font-size: 35px;
-  border-radius: 5px; }
-  .askbutton p {
-    margin: 0;
-    padding: 0; }
+  font-size: 25px;
+  border-radius: 25px;
+  padding: 5px 20px;
+  background: #2c2d38; }
+  .askbutton::hover {
+    background: white; }
+
+button.askagain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px 20px;
+  position: relative;
+  bottom: 10px;
+  background: #8c8ea4;
+  font-size: 14px;
+  border: 1px solid #d8ddef; }
+  button.askagain::hover {
+    background-color: black; }
+
+p.askagain::hover {
+  background: cyan;
+  border: 1px solid black;
+  color: cyan; }
 
 .question {
   display: inline-block;
@@ -235,22 +280,47 @@ textarea {
   font-size: 14px;
   color: #d8ddef; }
 
+.question::before {
+  content: "query : "; }
+
 .prediction {
-  margin: 30px 10px 0;
+  margin: 30px 10px;
   text-align: right;
   font-size: 20px;
   max-width: 300px; }
 
 .prediction-1, .prediction-2 {
-  background-image: url("images/kittens/clementine.svg"); }
+  font-family: 'Barrio', cursive;
+  font-size: 30px; }
   .prediction-1:before, .prediction-2:before {
-    content: "soothsayer clementine says"; }
+    font-family: "IM Fell DW Pica", serif;
+    content: "soothsayer clementine says : ";
+    font-size: 14px; }
+  .prediction-1:after, .prediction-2:after {
+    content: url("images/kittens/clementine2.svg"); }
 
 .prediction-3, .prediction-4 {
-  background-image: url("images/kittens/clementine2.svg"); }
+  font-family: 'Chelsea Market', cursive;
+  font-size: 16px; }
+
+.prediction-3::after, .prediction-4::after {
+  content: url("images/kittens/clementine2.svg"); }
+
+.prediction-3::before, .prediction-4::before {
+  content: "soothsayer clementine says: ";
+  font-family: "IM Fell DW Pica", serif; }
 
 .prediction-5, .prediction-6 {
-  background-image: url("images/kittens/hortense.svg"); }
+  font-family: 'Dynalight', cursive;
+  font-size: 35px; }
+
+.prediction-5::after, .prediction-6::after {
+  content: url("images/kittens/hortense.svg"); }
+
+.prediction-5::before, .prediction-6::before {
+  content: "soothsayer hortense says: ";
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 14px; }
 
 .prediction-7, .prediction-8 {
   font-family: 'Seaweed Script', cursive;
@@ -266,28 +336,91 @@ textarea {
   content: url("images/kittens/olivia.svg"); }
 
 .prediction-9, .prediction-10 {
-  background-image: url("images/kittens/hortense2.svg"); }
+  font-family: 'Dynalight', cursive;
+  font-size: 45px; }
+  .prediction-9::before, .prediction-10::before {
+    content: "soothsayer hortense says : ";
+    font-family: "IM Fell DW Pica", serif;
+    font-size: 14px; }
+  .prediction-9::after, .prediction-10::after {
+    content: url("images/kittens/hortense2.svg"); }
+
+.prediction-9 {
+  font-size: 30px; }
 
 .prediction-11 {
-  background-image: url("images/kittens/olivia2.svg"); }
-
-.prediction-13 {
-  background-image: url("images/kittens/mabel.svg"); }
-
-.prediction-14 {
-  background-image: url("images/kittens/sophronia.svg");
-  font-family: 'Miniver', cursive; }
-
-.prediction-14::before {
-  content: "soothsayer sophronia says:";
-  display: inline-block;
-  font-family: "IM Fell DW Pica", serif; }
+  font-family: 'Seaweed Script', cursive;
+  font-size: 30px;
+  line-height: 40px; }
+  .prediction-11::before {
+    font-family: "IM Fell DW Pica", serif;
+    content: "soothsayer olivia says : ";
+    font-size: 14px; }
+  .prediction-11::after {
+    content: url("images/kittens/olivia2.svg"); }
 
 .prediction-12 {
-  background-image: url("images/kittens/sophronia2.svg"); }
+  font-family: 'Miniver', cursive;
+  font-size: 24px; }
+  .prediction-12::before {
+    content: "soothsayer sophronia says : ";
+    font-family: "IM Fell DW Pica", serif;
+    font-size: 14px; }
+  .prediction-12::after {
+    content: url("images/kittens/sophronia2.svg"); }
 
-.askagain {
-  background: mediumvioletred; }
+.prediction-13 {
+  font-family: 'Sail', cursive;
+  font-size: 35px; }
+  .prediction-13::before {
+    content: "soothsayer mabel says : ";
+    font-size: 14px;
+    font-family: "IM Fell DW Pica", serif; }
+  .prediction-13::after {
+    content: url("images/kittens/mabel.svg"); }
+
+.prediction-14 {
+  font-family: 'Miniver', cursive;
+  font-size: 30px; }
+  .prediction-14::before {
+    content: "soothsayer sophronia says : ";
+    font-family: "IM Fell DW Pica", serif;
+    font-size: 14px; }
+  .prediction-14::after {
+    content: url("images/kittens/sophronia.svg"); }
+
+.fade-in-fwd {
+  -webkit-animation: fade-in-fwd 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-2-10 22:3:28
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation fade-in-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
 
 footer p {
   font-family: "IM Fell DW Pica", serif;
@@ -296,10 +429,17 @@ footer p {
 .line {
   height: 2px;
   background-color: #d8ddef;
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
+
+.line2 {
+  height: 2px;
+  background-color: #d8ddef;
+  width: 98%;
+  margin: 0 auto;
+  margin-bottom: 3px; }
 
 .footerflex {
   display: -webkit-box;

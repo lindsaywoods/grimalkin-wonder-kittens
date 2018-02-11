@@ -75,8 +75,11 @@ $(function(){
     $("#clickhidden").click(function(e){
         e.preventDefault();
         $(".wouldyou").addClass("hidden");
-        console.log("why not hidden?");
+        $(".headercontent").toggle();
+        console.log("sunday");
     });
+
+   
 
 
     $("form").on("submit", function(e){
@@ -108,20 +111,18 @@ $(function(){
 
         };
 
-        
-             
-
-
         if (question !== ""){
         // hides the form once it gets submitted
         const hideform = $("#myForm").hide();
 
         // puts prediction on the page alongside the question
-        $(".results").html(`
-        <p class = "question">${question}</p>
-        <p class = "prediction ${predictionStyle}"> ${getPrediction}</p>
-        <button class="askagain ${askagain}" id="askagain"></p>
+            $(".results").html(`
+        <p class = "question questioncard fade-in-fwd">${question}</p>
+        <p class = "prediction questioncard fade-in-fwd ${predictionStyle}"> ${getPrediction}</p>
+        <button class="fade-in-fwd askagain ${askagain}" id="askagain">ask another?</p>
         `);
+       
+
     }
 
     // on click, resets form 
@@ -131,16 +132,27 @@ $(function(){
         console.log("do not have high hopes for this");
     });
 
-    // theoretically hides results
-    // $("#askagain").on("click", function (e){
-    //     e.preventDefault(e);
-    //     $(".results").hide();
-    //     console.log("separfunction");
+   // theoretically hides results
+    $("#askagain").on("click", function (e){
+        e.preventDefault(e);
+        $(".results").hide();
+        console.log("separfunction");
 
-    // });
+    });
         
     });
+  
+   
+    
 
     
     
 });
+
+
+//WORKING CODE
+// $(".results").html(`
+//         <p class = "question">${question}</p>
+//         <p class = "prediction ${predictionStyle}"> ${getPrediction}</p>
+//         <button class="askagain ${askagain}" id="askagain"></p>
+//         `);

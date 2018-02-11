@@ -1,12 +1,28 @@
 .wouldyou {
     display: flex;
     justify-content: center;    
-    margin: 30px 10px 10px;
     font-family: $copyFont;
     letter-spacing: 1.5px;
     word-spacing: 3px;
-    a {
-        color: $mainColour
+    h3 {
+        width: 400px;
+        border: 1px solid $mainColour;
+        background: lighten($backgroundColour, 30);
+        font-weight: normal;
+        padding: 20px 10px;
+        border-radius: 5px;
+        margin-top: 110px;
     }
+
+    a {
+        color: $mainColour;
+        display: flex;
+        text-align: center;
+    }
+}
+.wouldyou::hover {
+    background: $backgroundColour;
+    
+    border: 3px solid mediumvioletred;
 }
 
