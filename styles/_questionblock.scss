@@ -1,13 +1,10 @@
 .results {
     background: lighten($backgroundColour, 40);
     border-radius: 5px;
-    // border: 1px solid $mainColour;
-    // border-style: double;
     border-width: 8px;
     position: relative;
-    // padding: 10px;
-    // color: $backgroundColour;
-    margin-top: 30px; 
+    margin-top: 20px; 
+    margin-bottom: 30px;
 }
 
 .questionflex {
@@ -44,8 +41,9 @@
 
 textarea {
     margin: 10px;
-    background:  url("images/kittens/clementine2.svg");
-    background-repeat: no-repeat;
+    background:  url("images/background.svg");
+    background-size: contain;
+    // background-repeat: no-repeat;
     color: $mainColour;
     border-radius: 5px;
     padding: 20px 15px;
@@ -58,12 +56,10 @@ textarea {
     margin: 0 auto;
     line-height: 1;
     font-size: 25px;
-    border-radius: 25px;
+    border-radius: 2px;
     padding: 5px 20px;
     background: $backgroundColour;
-        &::hover{
-            background: white;
-        }
+    color: $mainColour;
 }
 
 
@@ -149,6 +145,10 @@ p.askagain::hover {
     content: "soothsayer hortense says: ";
     font-family: $copyFont;    
     font-size: 14px;
+}
+
+.prediction-6 {
+    font-size: 25px;
 }
 
 // PREDICTION 7 & PREDICTION 8

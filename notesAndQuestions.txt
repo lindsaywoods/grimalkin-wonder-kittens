@@ -32,9 +32,8 @@ QUESTIONS
 - so many fonts?
  - page load vs in use vs size of site
 
+TO DO
 
-design cue 
-- mystical gradient?
-- font sizes/styles on resposes
-- clearer heading
-- try to avoid scroll 
+- finish scaling
+- footer 
+- figure out what's happening with spacing in header

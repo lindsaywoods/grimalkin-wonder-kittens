@@ -6,22 +6,24 @@ header {
     color: $mainColour;
     
     h1 {
-        font-family: 'Diplomata SC', cursive;
-        font-weight: normal;
-        font-size: 25px;
-        word-spacing: 9px;
+    font-family: 'Mate SC', serif;
+    font-weight: normal;
+    font-size: 45px;
+    word-spacing: 9px;
       
     }
     .and {
-        font-size: 15px;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    padding-top: -100px;
     }
 
     h2 {
-        font-family: 'Sail', cursive;
-        font-size: 25px;
-        letter-spacing: 3px;
-        padding-top: 20px;
-        font-weight: normal;
+    font-family: 'Mate SC', serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: normal;
     }
     .headercontent {
         text-align: center;
@@ -32,23 +34,24 @@ header {
 .headerimage {
     stroke: $mainColour;
     fill: $mainColour;
+    opacity: .7;
 }
 
-.headercontent h1 {
-    padding-top: 50px;
+.headercontent{
+    margin-top: 30px;
+}
+
+.mg {
+    font-size: 40px;
 }
 
 .madgrim {
-    font-size: 40px;
-    font-family: 'Sail', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .kittenheader{
-    font-size: 35px;
-    font-family: 'Diplomata SC', cursive;
-    
+    font-size: 50px;
 }
 
-.smallheader {
-    border: 3px solid mediumvioletred;
-}

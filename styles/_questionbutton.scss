@@ -11,7 +11,7 @@
         font-weight: normal;
         padding: 20px 10px;
         border-radius: 5px;
-        margin-top: 110px;
+        margin-top: 50px;
     }
 
     a {
@@ -20,9 +20,14 @@
         text-align: center;
     }
 }
-.wouldyou::hover {
-    background: $backgroundColour;
-    
-    border: 3px solid mediumvioletred;
+
+@media (max-width: 460px) {
+    .wouldyou h3 {
+        padding: 10px 0px;
+        width: 200px;
+        font-size: 14px;
+        word-spacing: 1px;
+    }
 }
+
 

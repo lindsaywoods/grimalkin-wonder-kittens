@@ -33,7 +33,7 @@ const predictions = [
 
 "many truths can be found in the entrails of a mouse.  signs point to no.",
 
-"even the most fierce housecat cannot defeat a vaccuum cleaner.  outlook not so good.",
+"even the most fierce housecat cannot defeat the vaccuum cleaner.  outlook not so good.",
 
 "unruffle your fur and the answer will come to you.",
 
@@ -114,6 +114,11 @@ $(function(){
         if (question !== ""){
         // hides the form once it gets submitted
         const hideform = $("#myForm").hide();
+        
+        // hides large whole family footer image
+        $(".familyall").toggle();
+        $(".smallfamily").toggle();
+
 
         // puts prediction on the page alongside the question
             $(".results").html(`

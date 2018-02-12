@@ -124,38 +124,41 @@ header {
   position: relative;
   color: #d8ddef; }
   header h1 {
-    font-family: 'Diplomata SC', cursive;
+    font-family: 'Mate SC', serif;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 45px;
     word-spacing: 9px; }
   header .and {
-    font-size: 15px; }
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    padding-top: -100px; }
   header h2 {
-    font-family: 'Sail', cursive;
-    font-size: 25px;
+    font-family: 'Mate SC', serif;
+    font-size: 22px;
     letter-spacing: 3px;
-    padding-top: 20px;
     font-weight: normal; }
   header .headercontent {
     text-align: center; }
 
 .headerimage {
   stroke: #d8ddef;
-  fill: #d8ddef; }
+  fill: #d8ddef;
+  opacity: .7; }
 
-.headercontent h1 {
-  padding-top: 50px; }
+.headercontent {
+  margin-top: 30px; }
+
+.mg {
+  font-size: 40px; }
 
 .madgrim {
-  font-size: 40px;
-  font-family: 'Sail', cursive; }
+  font-size: 30px;
+  margin: 0;
+  padding: 0; }
 
 .kittenheader {
-  font-size: 35px;
-  font-family: 'Diplomata SC', cursive; }
-
-.smallheader {
-  border: 3px solid mediumvioletred; }
+  font-size: 50px; }
 
 .wouldyou {
   display: -webkit-box;
@@ -174,7 +177,7 @@ header {
     font-weight: normal;
     padding: 20px 10px;
     border-radius: 5px;
-    margin-top: 110px; }
+    margin-top: 50px; }
   .wouldyou a {
     color: #d8ddef;
     display: -webkit-box;
@@ -182,16 +185,20 @@ header {
     display: flex;
     text-align: center; }
 
-.wouldyou::hover {
-  background: #2c2d38;
-  border: 3px solid mediumvioletred; }
+@media (max-width: 460px) {
+  .wouldyou h3 {
+    padding: 10px 0px;
+    width: 200px;
+    font-size: 14px;
+    word-spacing: 1px; } }
 
 .results {
   background: #8c8ea4;
   border-radius: 5px;
   border-width: 8px;
   position: relative;
-  margin-top: 30px; }
+  margin-top: 20px;
+  margin-bottom: 30px; }
 
 .questionflex {
   display: -webkit-box;
@@ -234,8 +241,8 @@ header {
 
 textarea {
   margin: 10px;
-  background: url("images/kittens/clementine2.svg");
-  background-repeat: no-repeat;
+  background: url("images/background.svg");
+  background-size: contain;
   color: #d8ddef;
   border-radius: 5px;
   padding: 20px 15px;
@@ -246,11 +253,10 @@ textarea {
   margin: 0 auto;
   line-height: 1;
   font-size: 25px;
-  border-radius: 25px;
+  border-radius: 2px;
   padding: 5px 20px;
-  background: #2c2d38; }
-  .askbutton::hover {
-    background: white; }
+  background: #2c2d38;
+  color: #d8ddef; }
 
 button.askagain {
   display: -webkit-box;
@@ -321,6 +327,9 @@ p.askagain::hover {
   content: "soothsayer hortense says: ";
   font-family: "IM Fell DW Pica", serif;
   font-size: 14px; }
+
+.prediction-6 {
+  font-size: 25px; }
 
 .prediction-7, .prediction-8 {
   font-family: 'Seaweed Script', cursive;
@@ -424,41 +433,51 @@ p.askagain::hover {
 
 footer p {
   font-family: "IM Fell DW Pica", serif;
-  color: #d8ddef; }
+  color: #d8ddef;
+  opacity: .3;
+  padding: 0 20px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1; }
+
+.family {
+  margin-bottom: 50px;
+  fill: #d8ddef;
+  stroke: #d8ddef;
+  opacity: .7; }
 
 .line {
-  height: 2px;
+  height: 1px;
   background-color: #d8ddef;
-  width: 98%;
+  opacity: .5;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 10px; }
-
-.line2 {
-  height: 2px;
-  background-color: #d8ddef;
-  width: 98%;
-  margin: 0 auto;
-  margin-bottom: 3px; }
+  margin-top: 30px; }
 
 .footerflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
-.footerleftside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.footersvg {
-  max-width: 200px;
-  margin: 10px 30px; }
-  .footersvg svg {
-    stroke: #d8ddef;
-    fill: #d8ddef; }
+.smallfamily {
+  fill: #d8ddef;
+  stroke: #d8ddef;
+  opacity: .7;
+  padding-top: 5px;
+  display: none;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  min-width: 280px;
+  position: relative;
+  z-index: -1; }
 
 h1, h2 {
   margin: 0;

@@ -2,42 +2,50 @@ footer {
     p {
         font-family: $copyFont;
         color: $mainColour;
+        opacity: .3;
+        padding: 0 20px;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 }
 
+.family {
+ margin-bottom: 50px;
+    fill: $mainColour;
+    stroke: $mainColour;
+    opacity: .7;
+}
+
 .line {
-    height: 2px;
+    height: 1px;
     background-color: $mainColour;
-    width: 98%;
+    opacity: .5;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 10px;
+    margin-top: 30px;
 }
-
-.line2 {
-    height: 2px;
-    background-color: $mainColour;
-    width: 98%;
-    margin: 0 auto;
-    margin-bottom: 3px;
-}
-
 
 
 .footerflex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 
-.footerleftside {
-    display: flex;
+.smallfamily {
+    fill: $mainColour;
+    stroke: $mainColour;
+    opacity: .7;
+    padding-top: 5px;
+    display: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 280px;
+    position: relative;
+    z-index: -1;
+    
 }
 
-.footersvg {
-    max-width: 200px;
-    margin: 10px 30px;
-    svg {
-        stroke: $mainColour;
-        fill: $mainColour;
-    }
-}
+
+
+
