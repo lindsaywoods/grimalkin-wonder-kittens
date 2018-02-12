@@ -123,10 +123,10 @@ $(function(){
         $("#myForm").show();
     });
 
-   // theoretically hides results
+   // hides results
     $("#askagain").on("click", function (e){
         e.preventDefault(e);
-        $(".results").hide();
+        $(".results").html("");
 
     });
         
