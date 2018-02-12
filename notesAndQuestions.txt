@@ -35,5 +35,4 @@ QUESTIONS
 TO DO
 
 - finish scaling
-- footer 
 - figure out what's happening with spacing in header

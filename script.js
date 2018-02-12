@@ -1,41 +1,31 @@
-// text is input by a user
-// on 'submit' the question disappears
-// on 'submit' a random response is generated
-// randomize by index?
-// user can tweet their advice?
-    // include the question?
-// user can send their advice to themselves?
-    // include the question?
-// user can go again
-
 const predictions = [
-"a bird in the sky is a meal in your belly you have yet to catch. now is your chance.", 
+"a bird in the sky is a meal in yr belly yu have yet to catch. now is yr chance.", 
 
-"as you may count on mice running from my magnificence, so you may count on this", 
+"as yu may count on mice running from my magnificence, so yu may count on this", 
 
 "throw a fish into the ocean and it will swim away.  throw a fish to me and i will eat it.  it is certain.",
 
-"indeed.  keep your claws sharp and soon you shall achieve victory",
+"indeed.  keep yr claws sharp and soon you shall achieve victory",
 
 "it is as a window in summer. outlook is sunny.",
 
-"sometimes you are the countertop.  sometimes you are the glass and sometimes you are the paw.  dont be the glass.  dont be the countertop.  be the paw.",
+"sometimes yu are the countertop.  sometimes yu are the glass and sometimes yu are the paw.  dont be the glass.  dont be the countertop.  be the paw.",
 
 "i dont care about this problem.  try again later.  or dont",
 
-"some things are not meant for tiny human brains.  be content with your lack of knowledge.",
+"some things are not meant for tiny human brains.  be content with yr lack of knowledge.",
 
-"some answers will only come to you in the dead of night.  wait until everyone else in your home is asleep.  race flat out from room to room, careening wildly into furniture.  repeat as necessary.",
+"some answers will only come to yu in the dead of night.  wait until everyone else in yr home is asleep.  race flat out from room to room, careening wildly into furniture.  repeat as necessary.",
 
 "take a nap, then try again",
 
-"you are looking for a mouse in the sky and a bird on the ground.  cease your foolishness.",
+"yu are looking for a mouse in the sky and a bird on the ground.  cease yr foolishness.",
 
 "many truths can be found in the entrails of a mouse.  signs point to no.",
 
 "even the most fierce housecat cannot defeat the vaccuum cleaner.  outlook not so good.",
 
-"unruffle your fur and the answer will come to you.",
+"unruffle yr fur and the answer will come to you.",
 
 ]
 
@@ -76,10 +66,8 @@ $(function(){
         e.preventDefault();
         $(".wouldyou").addClass("hidden");
         $(".headercontent").toggle();
-        console.log("sunday");
     });
 
-   
 
 
     $("form").on("submit", function(e){
@@ -107,7 +95,6 @@ $(function(){
         // gives the user an option to ask again
         function askagain (){
             $("#myForm").show();
-            console.log("what is goingon");
 
         };
 
@@ -134,30 +121,16 @@ $(function(){
     $("#askagain").on("click", function(e){
         e.preventDefault();
         $("#myForm").show();
-        console.log("do not have high hopes for this");
     });
 
    // theoretically hides results
     $("#askagain").on("click", function (e){
         e.preventDefault(e);
         $(".results").hide();
-        console.log("separfunction");
 
     });
         
     });
-  
-   
-    
-
-    
     
 });
 
-
-//WORKING CODE
-// $(".results").html(`
-//         <p class = "question">${question}</p>
-//         <p class = "prediction ${predictionStyle}"> ${getPrediction}</p>
-//         <button class="askagain ${askagain}" id="askagain"></p>
-//         `);
