@@ -324,8 +324,8 @@ p.askagain::hover {
   font-family: "IM Fell DW Pica", serif; }
 
 .prediction-5, .prediction-6 {
-  font-family: 'Dynalight', cursive;
-  font-size: 35px; }
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 40px; }
 
 .prediction-5::after, .prediction-6::after {
   content: url("images/kittens/hortense.svg"); }
@@ -352,7 +352,7 @@ p.askagain::hover {
   content: url("images/kittens/olivia.svg"); }
 
 .prediction-9, .prediction-10 {
-  font-family: 'Dynalight', cursive;
+  font-family: 'Nanum Brush Script', cursive;
   font-size: 45px; }
   .prediction-9::before, .prediction-10::before {
     content: "soothsayer hortense says : ";
@@ -387,7 +387,7 @@ p.askagain::hover {
 
 .prediction-13 {
   font-family: 'Sail', cursive;
-  font-size: 35px; }
+  font-size: 30px; }
   .prediction-13::before {
     content: "soothsayer mabel says : ";
     font-size: 14px;
@@ -441,8 +441,18 @@ p.askagain::hover {
 footer p {
   font-family: "IM Fell DW Pica", serif;
   color: #d8ddef;
-  opacity: .3;
+  opacity: .5;
   padding: 0 20px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1; }
+
+footer a {
+  font-family: "IM Fell DW Pica", serif;
+  color: #d8ddef;
+  opacity: .5;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;

@@ -144,8 +144,8 @@ p.askagain::hover {
 // PREDICTION 5 & PREDICTION 6 - HORTENSE
 
 .prediction-5, .prediction-6{
-    font-family: 'Dynalight', cursive;
-    font-size: 35px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40px;
 }
 .prediction-5::after, .prediction-6::after {
     content: url("images/kittens/hortense.svg");
@@ -166,7 +166,6 @@ p.askagain::hover {
     font-family: 'Seaweed Script', cursive;
     font-size: 28px;
     padding-bottom: 30px;
-     
 }
 
 .prediction-7::before, .prediction-8::before {
@@ -181,7 +180,7 @@ p.askagain::hover {
 
 // PREDICTION 9 & PREDICTION 10 - HORTENSE
 .prediction-9, .prediction-10 {
-    font-family: 'Dynalight', cursive;
+    font-family: 'Nanum Brush Script', cursive;
     font-size: 45px;
     &::before {
         content: "soothsayer hortense says : ";
@@ -231,7 +230,7 @@ p.askagain::hover {
 //  PREDICTION 13 - MABEL
 .prediction-13 {
     font-family: 'Sail', cursive;
-    font-size: 35px;
+    font-size: 30px;
     &::before {
         content: "soothsayer mabel says : ";
         font-size: 14px;

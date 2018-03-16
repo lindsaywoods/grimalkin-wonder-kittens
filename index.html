@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115887109-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115887109-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Barrio|Chelsea+Market|Diplomata+SC|Dynalight|IM+Fell+DW+Pica|IM+Fell+English+SC|Josefin+Sans|Kranky|Mate+SC|Miniver|Rye|Sail|Seaweed+Script"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -44,10 +55,13 @@
             <div class="questionBlockContainer">
                 <div class="questionflex" id="hiddenarea">
                     <div class="questionblock fade-in-fwd" div id="questiondiv">
-                        <form action="" form id="myForm" class="fade-in-fwd">
+                        <form action="" input type="submit" form id="myForm" class="fade-in-fwd">
                             <p class="yesorno">For your viewing pleasure, Madame Grimalkin's Soothsaying Wonder Kittens will answer your most pressing YES or NO questions.  Make sure to ask carefully and abide by results.</p>
                             <div class="buttonflex">
-                                <textarea name="textarea"id="textarea"cols="40" rows="1"input type="submit"class="textarea"></textarea>
+                                <!-- <input type="textarea" class="textarea" > -->
+                                <textarea name="textarea"id="textarea"cols="40" rows="1" input type="text"     class="textarea"></textarea>
+                                
+                                
                                 <button input type="submit" class="askbutton">ask
                                 </button>
                             </div>
@@ -74,8 +88,8 @@
     <footer>
         <div class="line"></div>
         <div class="footerflex">
-            <a href="mailto:hello@lindsayw.io">
-                <p class="credits">website designed & created by lindsay woods</p>
+            <a target="_blank" href="http://www.lindsayw.io">
+                <p class="credits">website designed & created by lindsay woods</a></p>
             </a>
             <div class="flip">
                 <div class="smallfamily">
@@ -90,8 +104,7 @@
                         />
                     </svg>
                 </div>
-               
-                <a href="https://www.instagram.com/constance_doesnt_care/">
+                <a target="_blank" href="https://www.instagram.com/constance_doesnt_care/">
                     <p>instagram @constance_doesnt_care</p>
                 </a>
             </div>

@@ -104,7 +104,7 @@ $(function(){
         
         // hides large whole family footer image
         $(".familyall").toggle();
-        $(".smallfamily").toggle();
+        // $(".smallfamily").toggle();
 
 
         // puts prediction on the page alongside the question
@@ -113,7 +113,7 @@ $(function(){
         <p class = "prediction questioncard fade-in-fwd ${predictionStyle}"> ${getPrediction}</p>
         <button class="fade-in-fwd askagain ${askagain}" id="askagain">ask another?</p>
         `);
-       
+    
 
     }
 
@@ -123,7 +123,7 @@ $(function(){
         $("#myForm").show();
     });
 
-   // hides results
+    // hides results
     $("#askagain").on("click", function (e){
         e.preventDefault(e);
         $(".results").html("");
