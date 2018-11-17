@@ -1,32 +1,18 @@
 const predictions = [
 "a bird in the sky is a meal in yr belly yu have yet to catch. now is yr chance.", 
-
 "as yu may count on mice running from my magnificence, so yu may count on this", 
-
 "throw a fish into the ocean and it will swim away.  throw a fish to me and i will eat it.  it is certain.",
-
 "indeed.  keep yr claws sharp and soon you shall achieve victory",
-
 "it is as a window in summer. outlook is sunny.",
-
 "sometimes yu are the countertop.  sometimes yu are the glass and sometimes yu are the paw.  dont be the glass.  dont be the countertop.  be the paw.",
-
 "i dont care about this problem.  try again later.  or dont",
-
 "some things are not meant for tiny human brains.  be content with yr lack of knowledge.",
-
 "some answers will only come to yu in the dead of night.  wait until everyone else in yr home is asleep.  race flat out from room to room, careening wildly into furniture.  repeat as necessary.",
-
 "take a nap, then try again",
-
 "yu are looking for a mouse in the sky and a bird on the ground.  cease yr foolishness.",
-
 "many truths can be found in the entrails of a mouse.  signs point to no.",
-
 "even the most fierce housecat cannot defeat the vaccuum cleaner.  outlook not so good.",
-
 "unruffle yr fur and the answer will come to you.",
-
 ]
 
 const predictionStyles = [
